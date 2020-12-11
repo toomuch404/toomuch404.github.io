@@ -6,18 +6,18 @@
         align-items: center;
         justify-content: center;
       }
-      h1 {
+      img {
         font-size: 10em;
         cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <h1 id="poop" onclick="kill()">💩</h1>
+    <img id="among-us" src="./alive.png" alt="among us" onclick="kill()">
     <audio id="sound" src="./kill-sound.mp4"></audio>
     <script>
       function kill() {
-        document.getElementById("poop").innerText = "🍗";
+        document.getElementById("among-us").src = "./dead.png";
         document.getElementById("sound").play();
       }
     </script>
